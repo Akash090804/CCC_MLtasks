@@ -25,8 +25,10 @@
   }
   
   #banner {
+    height: 400px;
     overflow: hidden;
-  }
+}
+
   
   #banner figure {
     position: relative;
@@ -34,13 +36,12 @@
     left: 0;
     animation: 20s slider infinite; 
   }
-  
   #banner figure img {
-    float: left;
-    width: 20%; 
-    border-color:black;
-    mask-border-width: 100px;
-  }
+    width: 100%; 
+    height: auto; 
+    display: inline-block;
+}
+
   
   @keyframes slider { 
         0% { left: 0; }
@@ -86,12 +87,13 @@
      display: inline-block;  
     padding-bottom: 10px;
   }
-  .full-container{
+  .full-container {
     display: flex;
-    justify-content: center;
-    gap:20px;
-  
-  }
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
+
   .card{
     background-color: whitesmoke;
     border-radius: 20px;
@@ -100,13 +102,12 @@
     transition: transform 0.4s ease-in-out,box-shadow 0.4s ease;
     overflow:hidden;
   }
-  .card img{
-    width:100px;
-    height:200px;
-    object-fit: cover;
-    transition: transfrom 0.4s ease;
-  
-  }
+  .card img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
   .info{
     padding:20px;
   }
