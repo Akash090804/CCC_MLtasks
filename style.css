@@ -33,7 +33,7 @@
     display: flex; /* Use flexbox for easier image alignment */
     width: 500%; /* 100% * number of images */
     margin: 0;
-    animation: slider 20s infinite;
+    animation: slider 60s infinite;
 }
 
 #banner figure img {
@@ -100,7 +100,8 @@
     border-radius: 20px;
     box-shadow: 0 4px 8px;
     width:300px;
-    transition: transform 0.4s ease-in-out,box-shadow 0.4s ease;
+    transition: transform 0.4s ease-in-out,
+    box-shadow 0.4s ease;
     overflow:hidden;
   }
   .card img {
