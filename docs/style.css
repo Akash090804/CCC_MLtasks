@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://i.pinimg.com/736x/19/ca/6a/19ca6abe5a6d55004c70656ae28163af.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: rgba(22, 41, 56, 0.7);
+}
+
+.logo {
+    font-size: medium;
+    color: antiquewhite;
+}
+
+nav a {
+    font-size: medium;
+    color: aliceblue;
+    margin-left: 30px;
+}
+
+.login-button {
+    width: 100px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.login-button:hover {
+    background: white;
+    color: #162938;
+}
+
+.popup-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: none; 
+    flex-direction: column;
+    padding: 20px;
+}
+
+.popup-box.active {
+    display: flex; 
+}
+
+
+.formbox {
+    width: 100%;
+    display: none; 
+}
+
+.formbox.active {
+    display: block; /* Show the active form */
+}
+
+.formbox h2 {
+    color: black;
+    text-align: center;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.inputBox label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: medium;
+    color: black;
+    transition: 0.3s;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label {
+    top: -10px;
+    font-size: small;
+    color: #162938;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 40px;
+    border: 2px solid #162938;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+}
+
+.rememberme {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #162938;
+}
+
+.button {
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border: none;
+    border-radius: 8px;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 10px; /* Added margin for better spacing */
+}
+
+.register {
+    font-size: 0.9em;
+    color: #162938;
+    text-align: center;
+}
+
+.register a {
+    color: #162938;
+    text-decoration: none;
+}
+
+.register a:hover {
+    color: violet;
+    text-decoration: underline;
+}

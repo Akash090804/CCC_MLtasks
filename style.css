@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .header {
+    background-color: hsl(300, 100%, 25%);
+    margin: auto;
+    padding: 20px; 
+    display: flex; 
+    justify-content: space-between;
+    gap: 20px; 
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  #banner {
+    height: 400px; /* Adjust as needed */
+    overflow: hidden;
+}
+
+#banner figure {
+    display: flex; /* Use flexbox for easier image alignment */
+    width: 500%; /* 100% * number of images */
+    margin: 0;
+    animation: slider 60s infinite;
+}
+
+#banner figure img {
+    width: 20%; 
+    height: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+@keyframes slider {
+    0% { transform: translateX(0%); }
+    20% { transform: translateX(0%); }
+    25% { transform: translateX(-100%); }
+    45% { transform: translateX(-100%); }
+    50% { transform: translateX(-200%); }
+    70% { transform: translateX(-200%); }
+    75% { transform: translateX(-300%); }
+    95% { transform: translateX(-300%); }
+    100% { transform: translateX(-400%); }
+}
+
+  #services{
+  background-image: url('https://i.pinimg.com/564x/b8/f8/fa/b8f8fa8d2eaa6518253f301eadac06b0.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+  }
+  #destination{
+    background-image: url('');
+    background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: scroll;
+  }
+  .destination{
+    padding:50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    text-decoration: solid;
+  
+    border: 2px solid #000; 
+    border-radius: 10px; 
+    margin: 20px auto;       
+    max-width: 1200px;
+  }
+  .destination h2{
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;   
+    border-bottom: 2px solid #e67e22;
+     display: inline-block;  
+    padding-bottom: 10px;
+  }
+  .full-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px; 
+}
+
+  .card{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px;
+    width:300px;
+    transition: transform 0.4s ease-in-out,
+    box-shadow 0.4s ease;
+    overflow:hidden;
+  }
+  .card img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+  .info{
+    padding:20px;
+  }
+  .info h3{
+    font-size: medium;
+    margin-bottom: 10px;
+    color:#111;
+  
+  
+  }
+  .info p{
+    font-size: small;
+    color:#666;
+  }
+  .card:hover{
+    transform: translate(-10px);
+    box-shadow:0 6px 12px;
+  }
+  .card:hover img{
+    transform: scale(1.2);
+  }
+  .about{
+    padding:50px 20px;
+    background-color:#dfd4d4;
+    text-align:center;
+    margin:20px auto;
+    max-width:1000px;
+  }
+  .about h2{
+    font-size: large;
+    margin-bottom: 30px;
+    color:aqua;
+  }
+  .about-us p {
+    font-size: medium;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  .core-values li {
+    font-size: medium;
+    margin-bottom: 15px;
+  }
+  .team{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+  }
+  .team-member{
+    max-width:200px;
+    text-align:center;
+    margin:20px;
+  
+  }
+  .contactinfo {
+    margin-top: 30px;
+  }
+  
+  .contactinfo a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  #contact{
+    border:5px line-through #111;
+    margin:auto;
+    text-align: justify;
+    display:flex;
+    gap:30px;
+   
+    padding:50px 20px;
+    background-color:#dfd4d4;
+    
+    margin:20px auto;
+    max-width:1000px;
+  }
+  .cont{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #cc2e2e;
+  
+  }
+  .follow-us{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .Message{
+    
+        text-shadow: #dfd4d4;
+        text-align: center;
+        width:500px;
+          height:500px;
+          border:2px black;
+          margin:20px auto;
+        }
+  #button{
+   background-color:grey;
+    
+    color:white;
+    padding:1px 1px;
+    text-align:center;
+  display:inline-block;
+    font-size:16px;
+    
+  }
